@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hockey Survival Guide — EN / NL</title>
+    <style>
+      :root {
+        --bg: #07101a;
+        --card: #0b1220;
+        --accent: #0ea5a0;
+        --muted: #9fb3bd;
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto;
+        background: linear-gradient(180deg, #07101a, #041421);
+        color: #e6eef6;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 28px auto;
+        padding: 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.4rem;
+      }
+      .lang-switch {
+        display: flex;
+        gap: 8px;
+      }
+      button {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        color: inherit;
+        padding: 8px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button.active {
+        background: var(--accent);
+        color: #052022;
+        border: none;
+      }
+      main {
+        margin-top: 20px;
+        display: grid;
+        gap: 18px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .section-title {
+        font-weight: 700;
+        color: #dff3f0;
+        margin-top: 10px;
+      }
+      .diagram {
+        background: #061822;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 8px;
+      }
+      svg {
+        width: 100%;
+        height: auto;
+        max-width: 640px;
+        display: block;
+        margin: auto;
+      }
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      ul {
+        margin: 8px 0 12px 20px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #8ea7af;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 820px) {
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      pre {
+        background: #041218;
+        padding: 8px;
+        border-radius: 6px;
+        color: #9fb3bd;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <h1>Hockey Survival Guide</h1>
+          <div style="color: var(--muted); font-size: 0.95rem">
+            5th Dutch Division — defensive survival & tactics (EN / NL)
+          </div>
+        </div>
+        <div class="lang-switch" role="tablist" aria-label="Language switcher">
+          <button id="btn-en" class="active" aria-pressed="true">
+            English
+          </button>
+          <button id="btn-nl" aria-pressed="false">Nederlands</button>
+        </div>
+      </header>
+
+      <main>
+        <!-- ENGLISH CONTENT -->
+        <article id="content-en" class="card">
+          <h2>Overview — Survival Strategy</h2>
+          <p>
+            <strong>Primary goal:</strong> protect the slot, block shots, freeze
+            the puck when needed and use quick counters. Against a much stronger
+            opponent, your target is to keep the score respectable — under 5
+            goals if possible.
+          </p>
+
+          <div class="two-col">
+            <div>
+              <div class="section-title">Team Principles</div>
+              <ul>
+                <li>
+                  Stay compact: protect the middle and the crease — don't give
+                  up high-danger chances.
+                </li>
+                <li>
+                  Keep passes simple — use the boards/glass to clear rather than
+                  risky central passes.
+                </li>
+                <li>
+                  Short shifts (≤40s) and smart, staggered line changes to avoid
+                  being pinned.
+                </li>
+                <li>
+                  Play conservative systems: 1–4 neutral-zone wall or 1–2–2 trap
+                  with D collapse.
+                </li>
+                <li>
+                  Psychology: ignore the scoreboard, celebrate small wins
+                  (clear, block, good shift).
+                </li>
+                <li>
+                  Only one or two forwards should join the attack at a time. The
+                  rest stay in the defensive or neutral zone to protect the slot
+                  and limit high-danger chances.
+                </li>
+              </ul>
+
+              <div class="section-title">Tactical Systems</div>
+              <ul>
+                <li>
+                  <strong>1–4 Wall (neutral zone):</strong> 1 forward pressures,
+                  four form a horizontal wall at the blue line — forces dump-ins
+                  and perimeter play.
+                </li>
+                <li>
+                  <strong>1–2–2 Trap:</strong> one forward pressures while two
+                  block the middle and two D stay deep — good to slow build-up
+                  and force mistakes.
+                </li>
+                <li>
+                  <strong>Collapse in D-zone:</strong> everyone protects slot
+                  and front of net; let them shoot from the outside.
+                </li>
+                <li>
+                  <strong>Quick counters:</strong> when you win possession, 1–3
+                  short passes and a shot; keep counters fast and simple.
+                </li>
+                <li>
+                  <strong>Dump & change:</strong> when pinned, dump the puck
+                  deep and change lines — avoid long trapped shifts.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Time & Game Management</div>
+              <ul>
+                <li>
+                  Freeze the puck to stop momentum when possible (goalie or
+                  player cover and call for whistle).
+                </li>
+                <li>
+                  Use stoppages to regroup; take time on faceoffs within reason
+                  and set simple plays.
+                </li>
+                <li>
+                  Don't send everyone to the boards on a battle; keep coverage
+                  for potential breakouts.
+                </li>
+              </ul>
+
+              <div class="section-title">Bench & Mental Rules</div>
+              <ul>
+                <li>
+                  Focus on mini-goals (e.g., keep them scoreless for the next 5
+                  minutes).
+                </li>
+                <li>
+                  Keep language positive, call out good plays, reward defensive
+                  efforts.
+                </li>
+                <li>
+                  If panic sets in: slow the game — freeze pucks, simple clears,
+                  and organized line changes.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 class="section-title">Position-by-position (EN)</h3>
+          <div class="two-col">
+            <div>
+              <div class="section-title">Goalie</div>
+              <ul>
+                <li>
+                  Play slightly deeper in the crease to handle passes and
+                  lateral plays.
+                </li>
+                <li>
+                  Freeze pucks whenever possible — this kills the opponent's
+                  momentum and lets lines change.
+                </li>
+                <li>
+                  Communicate early and loudly: call screens, men behind, and
+                  when to clear.
+                </li>
+                <li>
+                  Avoid risky puck plays behind the net — unless you're certain.
+                </li>
+              </ul>
+
+              <div class="section-title">Defensemen</div>
+              <ul>
+                <li>
+                  Primary duty: protect the slot and front of net — defense
+                  first.
+                </li>
+                <li>
+                  One D should challenge the puck along the boards; the other
+                  stays net-side and covers rebounds.
+                </li>
+                <li>
+                  Use simple breakouts: off the glass or up the boards —
+                  <strong>no risky passes through the middle</strong>.
+                </li>
+                <li>
+                  Never both pinch at the blue line; if the puck is turned over,
+                  retreat immediately.
+                </li>
+                <li>
+                  Stay mainly in your own and neutral zones; avoid going deep
+                  into the attacking zone.
+                </li>
+                <li>
+                  Support from the blue line is acceptable only when play is
+                  under clear control; always retreat if possession changes.
+                </li>
+                <li>
+                  One D must always stay back — never both forward together.
+                </li>
+                <li>
+                  Treat the blue line as the offensive limit. Defense first.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Centers</div>
+              <ul>
+                <li>
+                  Drop deep and support D — act as a third defender in front of
+                  the net when required.
+                </li>
+                <li>
+                  Faceoffs: win or tie; aim to get the puck back to the D or tie
+                  up the opposing center.
+                </li>
+                <li>
+                  Lead quick transitions with a simple, reliable first pass to a
+                  winger or skate the puck out yourself.
+                </li>
+              </ul>
+
+              <div class="section-title">Wingers</div>
+              <ul>
+                <li>
+                  On breakouts stay on the boards to provide safe options for
+                  passes.
+                </li>
+                <li>Chip the puck out when under pressure.</li>
+                <li>
+                  Forecheck conservatively: 1 pressures, 2 reads, 3 stays high
+                  to guard against breakouts.
+                </li>
+                <li>
+                  Shoot often and crash the net for rebounds — simple plays
+                  create opportunities.
+                </li>
+                <li>
+                  Only one or two forwards should join the attack at a time. The
+                  rest stay in the defensive or neutral zone to protect the slot
+                  and limit high-danger chances.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="section-title">Diagrams — Schematics</div>
+
+          <div class="diagram">
+            <h4 style="color: #dff3f0; margin: 0 0 6px 0; text-align: center">
+              1–2–2 (Neutral/Defensive)
+            </h4>
+            <!-- simple rink-like schematic -->
+            <svg viewBox="0 0 300 160" aria-label="1-2-2 diagram">
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="160"
+                fill="#041a20"
+                rx="8"
+              />
+              <!-- center line -->
+              <line
+                x1="0"
+                y1="40"
+                x2="300"
+                y2="40"
+                stroke="#08333a"
+                stroke-width="2"
+              />
+              <!-- Forward F1 pressure -->
+              <circle cx="150" cy="18" r="6" fill="#f97316" />
+              <text
+                x="150"
+                y="14"
+                fill="#fff"
+                font-size="9"
+                text-anchor="middle"
+              >
+                F1
+              </text>
+              <!-- two forwards middle -->
+              <circle cx="110" cy="50" r="6" fill="#0ea5a0" />
+              <circle cx="190" cy="50" r="6" fill="#0ea5a0" />
+              <text
+                x="110"
+                y="46"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F2
+              </text>
+              <text
+                x="190"
+                y="46"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F3
+              </text>
+              <!-- defensemen back -->
+              <circle cx="80" cy="110" r="6" fill="#38bdf8" />
+              <circle cx="220" cy="110" r="6" fill="#38bdf8" />
+              <text
+                x="80"
+                y="106"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D1
+              </text>
+              <text
+                x="220"
+                y="106"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D2
+              </text>
+              <!-- arrows showing retreat / pressure -->
+              <path
+                d="M150 28 L150 40"
+                stroke="#f97316"
+                stroke-width="1.5"
+                marker-end="url(#arrow)"
+              />
+              <defs>
+                <marker
+                  id="arrow"
+                  markerWidth="6"
+                  markerHeight="6"
+                  refX="5"
+                  refY="3"
+                  orient="auto"
+                >
+                  <path d="M0,0 L6,3 L0,6 z" fill="#f97316" />
+                </marker>
+              </defs>
+            </svg>
+            <p style="text-align: center; color: #9fb3bd; margin: 8px 0 0">
+              F1 pressures; F2/F3 cut passing lanes; D1/D2 protect net and cover
+              rebounds.
+            </p>
+          </div>
+
+          <div class="diagram">
+            <h4 style="color: #dff3f0; margin: 0 0 6px 0; text-align: center">
+              1–4 (Neutral Zone Wall)
+            </h4>
+            <svg viewBox="0 0 300 160" aria-label="1-4 diagram">
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="160"
+                fill="#041a20"
+                rx="8"
+              />
+              <!-- wall players -->
+              <circle cx="70" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="70"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                L
+              </text>
+              <circle cx="120" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="120"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D
+              </text>
+              <circle cx="180" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="180"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D
+              </text>
+              <circle cx="230" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="230"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                R
+              </text>
+              <!-- forechecker -->
+              <circle cx="150" cy="22" r="6" fill="#f97316" />
+              <text
+                x="150"
+                y="18"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F1
+              </text>
+              <p style="text-align: center; color: #9fb3bd; margin: 8px 0 0">
+                One forechecker pressures; four players form a wall across the
+                blue line — force perimeter play and dump-ins.
+              </p>
+            </svg>
+          </div>
+
+          <hr />
+          <div class="section-title">Quick Cheat-sheet</div>
+          <ul>
+            <li>No risky passes through the middle in our defensive zone.</li>
+            <li>Never both D go deep — one must always stay back.</li>
+            <li>Dump and change when pinned; freeze pucks to control tempo.</li>
+            <li>Short shifts; block shots and clear hard.</li>
+          </ul>
+        </article>
+
+        <!-- DUTCH CONTENT -->
+        <article id="content-nl" class="card" style="display: none">
+          <h2>Overzicht — Overlevingsstrategie</h2>
+          <p>
+            <strong>Hoofddoel:</strong> bescherm de slot, blokkeer schoten,
+            bevries de puck waar nodig en zet snelle counters in. Tegen een veel
+            sterkere tegenstander is het doel het aantal tegendoelpunten
+            beheersbaar te houden — bij voorkeur onder de 5.
+          </p>
+
+          <div class="two-col">
+            <div>
+              <div class="section-title">Teamprincipes</div>
+              <ul>
+                <li>
+                  Blijf compact: bescherm het midden en de keeper — geef geen
+                  hoge-gevaar kansen weg.
+                </li>
+                <li>
+                  Houd passes simpel — gebruik de boards/glass om uit te klaren
+                  in plaats van risicovolle passes door het midden.
+                </li>
+                <li>Korte shifts (≤40s) en slimme, gespreide lijnwissels.</li>
+                <li>
+                  Conservatieve systemen: 1–4 muur of 1–2–2 trap met inzakken in
+                  de defensieve zone.
+                </li>
+                <li>
+                  Psychologie: negeer het scorebord, vier kleine successen
+                  (clear, blok, goede shift).
+                </li>
+                <li>
+                  Slechts één of twee aanvallers gaan tegelijk mee naar voren.
+                  De rest blijft in de verdedigende of neutrale zone om de slot
+                  te beschermen en grote scoringskansen te beperken.
+                </li>
+              </ul>
+
+              <div class="section-title">Tactische systemen</div>
+              <ul>
+                <li>
+                  <strong>1–4 muur (neutrale zone):</strong> 1 voorwaartse
+                  drukt, vier vormen een horizontale muur bij de blauwe lijn —
+                  forceert dump-ins en perimeter play.
+                </li>
+                <li>
+                  <strong>1–2–2 trap:</strong> één voorwaartse drukt, twee
+                  blokkeren het midden en twee verdedigers blijven diep — goed
+                  om opbouw te vertragen en fouten af te dwingen.
+                </li>
+                <li>
+                  <strong>Inzakken in de defensive zone:</strong> iedereen
+                  verdedigt de slot; laat hen van buiten schieten.
+                </li>
+                <li>
+                  <strong>Snelle counters:</strong> bij gewonnen puck 1–3 korte
+                  passes en schot; houd counters snel en simpel.
+                </li>
+                <li>
+                  <strong>Dump & change:</strong> bij vastzitten diep uitklaren
+                  en wisselen.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Tijd & Wedstrijdbeheer</div>
+              <ul>
+                <li>
+                  Bevries de puck om momentum te stoppen wanneer mogelijk.
+                </li>
+                <li>
+                  Gebruik onderbrekingen om te hergroeperen; neem tijd bij
+                  faceoffs binnen redelijke grenzen.
+                </li>
+                <li>
+                  Stuur niet iedereen tegelijk naar de boards — houd dekking
+                  voor breakouts.
+                </li>
+              </ul>
+
+              <div class="section-title">Bank & Mentale regels</div>
+              <ul>
+                <li>
+                  Focus op mini-doelen (bijv. houd ze 5 minuten zonder
+                  doelpunt).
+                </li>
+                <li>
+                  Houd taal positief, roep goede plays uit, waardeer
+                  verdedigende inspanningen.
+                </li>
+                <li>
+                  Als paniek optreedt: vertraag het spel — bevries pucks,
+                  simpele clears, georganiseerde wissels.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <h3 class="section-title">Positie per positie (NL)</h3>
+          <div class="two-col">
+            <div>
+              <div class="section-title">Keeper</div>
+              <ul>
+                <li>
+                  Speel iets dieper in de goal om passes en laterale plays beter
+                  te handelen.
+                </li>
+                <li>
+                  Bevries rebounds zo vaak mogelijk — dit stopt momentum en
+                  geeft wisseltijd.
+                </li>
+                <li>
+                  Communiceer vroeg en luid: roep schermen, man achter, en
+                  wanneer klaren.
+                </li>
+                <li>
+                  Vermijd risicovolle puckplays achter het doel — tenzij zeker.
+                </li>
+              </ul>
+
+              <div class="section-title">Verdedigers</div>
+              <ul>
+                <li>
+                  Primaire taak: bescherm de slot en voor het doel — verdediging
+                  eerst.
+                </li>
+                <li>
+                  Één verdediger gaat de puck langs de boards tegemoet; de ander
+                  blijft bij de goal en dekt rebounds.
+                </li>
+                <li>
+                  Gebruik simpele breakouts: van het glas of langs de boards —
+                  <strong>geen risicovolle passes door het midden</strong>.
+                </li>
+                <li>
+                  Nooit beide pinch op de blauwe lijn; bij tegengoal
+                  onmiddellijk terugtrekken.
+                </li>
+                <li>
+                  Blijf voornamelijk in eigen en neutrale zone; ga niet diep de
+                  aanval in.
+                </li>
+                <li>
+                  Steun vanaf de blauwe lijn is oké als het spel volledig onder
+                  controle is; trek direct terug bij puckverlies.
+                </li>
+                <li>
+                  Nooit beide verdedigers naar voren — één blijft altijd achter.
+                </li>
+                <li>
+                  Zie de blauwe lijn als de limiet voor aanvallen. Eerst
+                  verdedigen.
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="section-title">Centrales</div>
+              <ul>
+                <li>
+                  Daal diep en steun de verdediging — fungeer als derde
+                  verdediger indien nodig.
+                </li>
+                <li>
+                  Faceoffs: win of tie; probeer de puck terug naar de
+                  verdediging te spelen of de tegenstander vast te houden.
+                </li>
+                <li>
+                  Leid snelle overgangen met een simpele betrouwbare eerste pass
+                  naar een winger of skate de puck eruit.
+                </li>
+              </ul>
+
+              <div class="section-title">Wings</div>
+              <ul>
+                <li>
+                  Bij breakouts houd je aan de boards voor veilige passes.
+                </li>
+                <li>Chip de puck eruit zodra je onder druk staat.</li>
+                <li>
+                  Forecheck conservatief: 1 drukt, 2 leest, 3 blijft hoog voor
+                  breakouts.
+                </li>
+                <li>
+                  Schiet vaak en crash het goal voor rebounds — simpele acties
+                  creëren kansen.
+                </li>
+                <li>
+                  Slechts één of twee aanvallers gaan tegelijk mee naar voren.
+                  De rest blijft in de verdedigende of neutrale zone om de slot
+                  te beschermen en grote scoringskansen te beperken.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="section-title">Diagrammen — Schematisch</div>
+
+          <div class="diagram">
+            <h4 style="color: #dff3f0; margin: 0 0 6px 0; text-align: center">
+              1–2–2 (Neutraal/Defensief)
+            </h4>
+            <svg viewBox="0 0 300 160" aria-label="1-2-2 diagram NL">
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="160"
+                fill="#041a20"
+                rx="8"
+              />
+              <line
+                x1="0"
+                y1="40"
+                x2="300"
+                y2="40"
+                stroke="#08333a"
+                stroke-width="2"
+              />
+              <circle cx="150" cy="18" r="6" fill="#f97316" />
+              <text
+                x="150"
+                y="14"
+                fill="#fff"
+                font-size="9"
+                text-anchor="middle"
+              >
+                F1
+              </text>
+              <circle cx="110" cy="50" r="6" fill="#0ea5a0" />
+              <circle cx="190" cy="50" r="6" fill="#0ea5a0" />
+              <text
+                x="110"
+                y="46"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F2
+              </text>
+              <text
+                x="190"
+                y="46"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F3
+              </text>
+              <circle cx="80" cy="110" r="6" fill="#38bdf8" />
+              <circle cx="220" cy="110" r="6" fill="#38bdf8" />
+              <text
+                x="80"
+                y="106"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D1
+              </text>
+              <text
+                x="220"
+                y="106"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D2
+              </text>
+            </svg>
+            <p style="text-align: center; color: #9fb3bd; margin: 8px 0 0">
+              F1 drukt; F2/F3 dekken het midden; D1/D2 beschermen het net en de
+              rebounds.
+            </p>
+          </div>
+
+          <div class="diagram">
+            <h4 style="color: #dff3f0; margin: 0 0 6px 0; text-align: center">
+              1–4 (Muur in Neutrale Zone)
+            </h4>
+            <svg viewBox="0 0 300 160" aria-label="1-4 diagram NL">
+              <rect
+                x="0"
+                y="0"
+                width="300"
+                height="160"
+                fill="#041a20"
+                rx="8"
+              />
+              <circle cx="70" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="70"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                L
+              </text>
+              <circle cx="120" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="120"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D
+              </text>
+              <circle cx="180" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="180"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                D
+              </text>
+              <circle cx="230" cy="80" r="6" fill="#38bdf8" />
+              <text
+                x="230"
+                y="76"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                R
+              </text>
+              <circle cx="150" cy="22" r="6" fill="#f97316" />
+              <text
+                x="150"
+                y="18"
+                font-size="9"
+                text-anchor="middle"
+                fill="#fff"
+              >
+                F1
+              </text>
+            </svg>
+            <p style="text-align: center; color: #9fb3bd; margin: 8px 0 0">
+              Eén voorwaartse drukt; vier vormen een muur — forceer
+              perimeter-spel en dump-ins.
+            </p>
+          </div>
+
+          <hr />
+          <div class="section-title">Korte regels — Cheat Sheet</div>
+          <ul>
+            <li>Geen risicovolle passes door het midden in onze zone.</li>
+            <li>Stuur nooit twee spelers naar hetzelfde board-battle.</li>
+            <li>Als je moe bent of vastzit: dump diep en wissel.</li>
+            <li>
+              Blokkeer schoten; blijf bij voorkeur op de voeten; tie de sticks
+              voor het goal.
+            </li>
+          </ul>
+        </article>
+      </main>
+
+      <footer>
+        <div style="color: #8ea7af">
+          Tip: Use this as a locker-room reference — keep it visible and review
+          formations before the match.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const en = document.getElementById("content-en");
+        const nl = document.getElementById("content-nl");
+        const btnEn = document.getElementById("btn-en");
+        const btnNl = document.getElementById("btn-nl");
+        btnEn.addEventListener("click", () => {
+          en.style.display = "block";
+          nl.style.display = "none";
+          btnEn.classList.add("active");
+          btnNl.classList.remove("active");
+          btnEn.setAttribute("aria-pressed", "true");
+          btnNl.setAttribute("aria-pressed", "false");
+        });
+        btnNl.addEventListener("click", () => {
+          en.style.display = "none";
+          nl.style.display = "block";
+          btnNl.classList.add("active");
+          btnEn.classList.remove("active");
+          btnNl.setAttribute("aria-pressed", "true");
+          btnEn.setAttribute("aria-pressed", "false");
+        });
+        // default language
+        en.style.display = "block";
+        nl.style.display = "none";
+      })();
+    </script>
+  </body>
+</html>
