@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.overview {
+  background: url(../imgs/header_background.jpg) ;
+  height: 500px;
+}
+
+.overview-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: whitesmoke;
+}
+
+.main-header {
+  background: yellowgreen;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 54px);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-nav__home {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.main-nav__home-link {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav__item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 0px
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.main-nav__item--ctm a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--ctm a:hover,
+.main-nav__item--ctm a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
